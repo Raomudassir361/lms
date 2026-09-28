@@ -6,8 +6,8 @@ import TeacherPortal from './components/TeacherPortal';
 import AdminDashboard from './components/AdminDashboard';
 
 export default function App() {
-  // Default to the requested Teacher Portal so it is immediately visible
-  const [activePortal, setActivePortal] = useState('teacher');
+  // Default to the first page (Portal Selection) so it immediately opens on the first screen
+  const [activePortal, setActivePortal] = useState('selection');
 
   if (activePortal === 'teacher') {
     return (
